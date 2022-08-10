@@ -37,12 +37,12 @@ jobs:
           # - name: debian-10
           #   image_name: os-packages-debian10
           #   dockerfile: build/Dockerfile.os.debian10
-          # - name: ubuntu-1804
-          #   image_name: os-packages-ubuntu1804
-          #   dockerfile: build/Dockerfile.os.ubuntu1804
-          # - name: ubuntu-2004
-          #   image_name: os-packages-ubuntu2004
-          #   dockerfile: build/Dockerfile.os.ubuntu2004
+          - name: ubuntu-1804
+            image_name: os-packages-ubuntu1804
+            dockerfile: build/Dockerfile.os.ubuntu1804
+          - name: ubuntu-2004
+            image_name: os-packages-ubuntu2004
+            dockerfile: build/Dockerfile.os.ubuntu2004
     steps:
       - name: Checkout
         uses: actions/checkout@v2

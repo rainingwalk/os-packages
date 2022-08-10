@@ -1,6 +1,6 @@
 FROM scratch
-# COPY --from=IMAGE_REPO/os-packages-ubuntu1804:IMAGE_TAG / /
-# COPY --from=IMAGE_REPO/os-packages-ubuntu2004:IMAGE_TAG / /
+COPY --from=IMAGE_REPO/os-packages-ubuntu1804:IMAGE_TAG / /
+COPY --from=IMAGE_REPO/os-packages-ubuntu2004:IMAGE_TAG / /
 COPY --from=IMAGE_REPO/os-packages-centos7:IMAGE_TAG / /
 # COPY --from=IMAGE_REPO/os-packages-centos8:IMAGE_TAG / /
 # COPY --from=IMAGE_REPO/os-packages-fedora33:IMAGE_TAG / /
